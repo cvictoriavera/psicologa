@@ -25,17 +25,16 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-card/80 backdrop-blur-lg shadow-card py-3"
           : "bg-transparent py-5"
-      }`}
+        }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <img src={logoImg} alt="Logo" className="w-10 h-10 object-contain" />
           <span className="font-semibold text-foreground text-lg hidden sm:block font-sans">
-            Cecilia Benito
+            Lic. Cecilia Belén Benito
           </span>
         </a>
 

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -91,11 +96,20 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Nunito', serif;
+  }
+
+  .text-fancy {
+    font-family: 'Nunito', serif;
   }
 }
 
@@ -103,15 +117,19 @@
   .gradient-hero {
     background: var(--gradient-hero);
   }
+
   .gradient-section {
     background: var(--gradient-section);
   }
+
   .gradient-card {
     background: var(--gradient-card);
   }
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
+
   .shadow-card {
     box-shadow: var(--shadow-card);
   }

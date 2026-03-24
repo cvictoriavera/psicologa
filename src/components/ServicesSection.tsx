@@ -31,12 +31,11 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-            ¿Qué te trae por acá?
-          </p>
+
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Motivos de consulta frecuentes
+            ¿Qué te trae por acá?
           </h2>
+          <p className="text-sm md:text-lg text-muted-foreground max-w-xl mx-auto mt-2">Cada persona es única, y tu proceso también lo es.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

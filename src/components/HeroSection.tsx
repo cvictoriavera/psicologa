@@ -30,29 +30,27 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-secondary-foreground mb-4"
+          className="text-sm font-semibold tracking-[0.25em] text-secondary-foreground mb-4"
         >
-          Psicóloga Clínica
+          Psicóloga Clínica Online
         </motion.p>
 
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6"
+          className="text-4xl md:text-6xl lg:text-7xl text-foreground font-bold leading-tight mb-6"
         >
-          Hablar sana lo que
-          <br />
-          <span className="italic text-primary">el silencio rompe</span>
-        </motion.h1>
+          Hablar sana lo que el silencio rompe.
+        </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
+          className="text-lg md:text-xl text-foreground max-w-xl mx-auto mb-10"
         >
-          Acompaño tu proceso, respeto tu tiempo. Un lugar seguro para ti.
+          Acompaño tu proceso, respeto tu tiempo.
         </motion.p>
 
         <motion.div

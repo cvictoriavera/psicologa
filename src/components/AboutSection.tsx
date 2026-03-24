@@ -4,7 +4,7 @@ import logoImg from "@/assets/logo-corazon.png";
 
 const AboutSection = () => {
   return (
-    <section id="sobre-mi" className="py-24 gradient-section">
+    <section id="sobre-mi" className="py-24 ">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Image */}
@@ -22,7 +22,7 @@ const AboutSection = () => {
                 className="w-full h-[500px] object-cover object-top"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-4 shadow-card">
+            <div className="absolute -bottom-6 -right-6">
               <img src={logoImg} alt="Logo" className="w-20 h-20 object-contain" />
             </div>
           </motion.div>
@@ -34,11 +34,11 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-              Sobre mí
+            <p className="text-lg font-semibold text-fancy tracking-[0.2em] text-primary mb-3">
+              Un poco sobre mí
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Cecilia Belén Benito
+              Hola, soy Cecilia
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
