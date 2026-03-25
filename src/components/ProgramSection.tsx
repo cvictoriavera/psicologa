@@ -7,7 +7,7 @@ const WHATSAPP_PROGRAM =
 
 const ProgramSection = () => {
   return (
-    <section id="programa" className="py-24 bg-background">
+    <section id="programa" className="py-24">
       <div className="container max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

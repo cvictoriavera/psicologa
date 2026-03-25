@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
-
-
 
 @tailwind base;
 @tailwind components;
@@ -50,8 +45,16 @@
     --sidebar-border: 270 80% 92%;
     --sidebar-ring: 263 86% 76%;
 
+    --teal: 182 43% 68%;
+    /* #8acfd1 */
+
     /* Custom tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(340 60% 88%), hsl(280 50% 90%), hsl(260 60% 88%));
+    --gradient-hero: linear-gradient(170deg,
+        hsl(182, 43%, 66%) 0%,
+        hsl(280, 50%, 90%) 30%,
+        hsl(340, 60%, 90%) 60%,
+        hsl(280, 30%, 97%) 90%,
+        hsl(182, 43%, 80%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(280 30% 97%), hsl(290 40% 95%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(290 47% 93% / 0.6));
     --shadow-soft: 0 8px 32px hsl(300 73% 28% / 0.08);
@@ -95,8 +98,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    background: var(--gradient-hero);
+    @apply text-foreground;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
   }
 
   h1,

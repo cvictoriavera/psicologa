@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WHATSAPP_URL =
@@ -8,22 +8,9 @@ const WHATSAPP_URL =
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source
-          src="https://videos.pexels.com/video-files/7195994/7195994-uhd_2560_1440_25fps.mp4"
-          type="video/mp4"
-        />
-      </video>
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(340_60%_88%/0.85)] via-[hsl(280_50%_90%/0.80)] to-[hsl(260_60%_88%/0.90)]" />
+
+
 
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
         <motion.p
@@ -90,9 +77,9 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="w-6 h-10 border-2 border-foreground/30 rounded-full flex justify-center"
+          className="text-foreground/50"
         >
-          <div className="w-1.5 h-3 bg-foreground/40 rounded-full mt-2" />
+          <ChevronDown className="w-8 h-8" />
         </motion.div>
       </motion.div>
     </section>
